@@ -5,5 +5,10 @@
   "main": "server/index.js",
   "repository": "git@github.com:iMobs/JestTesting.git",
   "author": "Ian Mobley <imobley@mobsworkshop.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
 }
