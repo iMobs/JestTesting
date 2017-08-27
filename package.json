@@ -8,7 +8,8 @@
   "license": "MIT",
   "scripts": {
     "test": "jest --coverage",
-    "test:coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls"
+    "test:coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls",
+    "lint": "eslint --ext .js --ext .jsx ."
   },
   "dependencies": {
     "express": "^4.15.4",
