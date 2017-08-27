@@ -57,5 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# Webpack Output
+dist/
+
 # VS Code config
 .vscode/
