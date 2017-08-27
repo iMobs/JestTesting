@@ -6,6 +6,9 @@
   "repository": "git@github.com:iMobs/JestTesting.git",
   "author": "Ian Mobley <imobley@mobsworkshop.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "jest --coverage"
+  },
   "dependencies": {
     "express": "^4.15.4",
     "react": "^15.6.1",
@@ -20,5 +23,15 @@
     "eslint-plugin-react": "^7.3.0",
     "jest": "^20.0.4",
     "supertest": "^3.0.0"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 50,
+        "functions": 50,
+        "lines": 50,
+        "statements": 50
+      }
+    }
   }
 }
