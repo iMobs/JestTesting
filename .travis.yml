@@ -4,8 +4,9 @@ node_js:
   - "node"
 
 cache:
+  yarn: true
   directories:
     - "node_modules"
 
 script:
-  - "npm test"
+  - "yarn test"
