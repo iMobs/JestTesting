@@ -1,21 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<NavBar /> renders correctly 1`] = `
-Array [
-  <Uncontrolled(Navbar)
-    bsStyle="default"
-    collapseOnSelect={true}
-    fixedTop={true}
+<Uncontrolled(Navbar)
+  bsStyle="default"
+  collapseOnSelect={true}
+  fixedTop={true}
 >
-    <NavbarHeader>
-        <NavbarBrand>
-            <a
-                href="/"
-            >
-                Jest Testing
-            </a>
-        </NavbarBrand>
-    </NavbarHeader>
-</Uncontrolled(Navbar)>,
-]
+  <NavbarHeader>
+    <NavbarBrand>
+      <a
+        href="/"
+      >
+        Jest Testing
+      </a>
+    </NavbarBrand>
+  </NavbarHeader>
+</Uncontrolled(Navbar)>
 `;
