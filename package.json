@@ -41,6 +41,14 @@
     "supertest": "^3.0.0",
     "webpack": "^3.5.5"
   },
+  "babel": {
+    "presets": [
+      "airbnb",
+      "es2015",
+      "react",
+      "stage-0"
+    ]
+  },
   "jest": {
     "coverageThreshold": {
       "global": {
