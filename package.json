@@ -37,5 +37,15 @@
     "react-test-renderer": "^15.6.1",
     "supertest": "^3.0.0",
     "webpack": "^3.5.5"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 50,
+        "functions": 50,
+        "lines": 50,
+        "statements": 50
+      }
+    }
   }
 }
