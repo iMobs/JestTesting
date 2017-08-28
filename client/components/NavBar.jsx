@@ -5,7 +5,9 @@ export default () => (
   <Navbar collapseOnSelect fixedTop>
     <Navbar.Header>
       <Navbar.Brand>
-        Jest Testing
+        <a href="/">
+          Jest Testing
+        </a>
       </Navbar.Brand>
     </Navbar.Header>
   </Navbar>

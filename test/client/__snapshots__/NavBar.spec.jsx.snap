@@ -9,7 +9,11 @@ Array [
 >
     <NavbarHeader>
         <NavbarBrand>
-            Jest Testing
+            <a
+                href="/"
+            >
+                Jest Testing
+            </a>
         </NavbarBrand>
     </NavbarHeader>
 </Uncontrolled(Navbar)>,
