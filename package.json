@@ -38,7 +38,6 @@
     "eslint-plugin-react": "^7.3.0",
     "jest": "^20.0.4",
     "react-test-renderer": "^15.6.1",
-    "sinon": "^3.2.1",
     "supertest": "^3.0.0",
     "webpack": "^3.5.5"
   },
