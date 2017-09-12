@@ -4,5 +4,9 @@ module.exports = {
         "browser": true,
         "node": true,
         "jest": true
+    },
+
+    "rules": {
+        "import/no-named-as-default": 0
     }
 };
