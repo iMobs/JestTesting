@@ -1,12 +1,26 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 import { shallow } from 'enzyme';
+import toJson from 'enzyme-to-json';
 
-import App from '../../client/components/App';
+import { App } from '../../client/components/App';
 
 describe('<App />', () => {
-  it('should render', () => {
-    const app = shallow(<App />);
+  let wrapper;
+  let fn;
 
-    expect(app.find('div').length).toBeGreaterThanOrEqual(1);
+  beforeEach(() => {
+    fn = jest.fn();
+    wrapper = shallow(<App count={0} buttonCallback={fn} />);
+  });
+
+  it('should render', () => {
+    expect(toJson(wrapper)).toMatchSnapshot();
+  });
+
+  it('should call the callback on click', () => {
+    wrapper.find(Button).simulate('click');
+
+    expect(fn).toBeCalled();
   });
 });

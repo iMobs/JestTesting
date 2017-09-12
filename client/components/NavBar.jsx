@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar } from 'react-bootstrap';
 
 export default () => (
-  <Navbar collapseOnSelect fixedTop>
+  <Navbar collapseOnSelect>
     <Navbar.Header>
       <Navbar.Brand>
         <a href="/">

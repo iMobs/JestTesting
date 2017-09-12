@@ -4,7 +4,6 @@ exports[`<NavBar /> renders correctly 1`] = `
 <Uncontrolled(Navbar)
   bsStyle="default"
   collapseOnSelect={true}
-  fixedTop={true}
 >
   <NavbarHeader>
     <NavbarBrand>
