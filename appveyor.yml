@@ -3,16 +3,15 @@ environment:
 
 cache:
   - node_modules
+  - "%LOCALAPPDATA%\\Yarn"
 
 install:
   - ps: Install-Product node $env:nodejs_version
-  - if exist node_modules npm prune
-  - if exist node_modules npm rebuild
-  - npm install
+  - yarn install
 build: off
 test_script:
   - node --version
-  - npm --version
-  - npm run lint
-  - npm test
+  - yarn --version
+  - yarn run lint
+  - yarn test
 version: "{build}"
