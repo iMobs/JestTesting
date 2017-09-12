@@ -15,6 +15,7 @@
     "lint": "eslint --ext .js --ext .jsx ."
   },
   "dependencies": {
+    "ejs": "^2.5.7",
     "express": "^4.15.4",
     "history": "^4.7.2",
     "morgan": "^1.8.2",
