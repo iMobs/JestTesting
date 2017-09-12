@@ -1,4 +1,6 @@
-import reducer, { incrementCounter, decrementCounter } from '../../client/store/modules/counter';
+import reducer from '../../client/store/reducers/counter';
+import { incrementCounter, decrementCounter } from '../../client/store/actions/counter';
+import * as constants from '../../client/store/constants/counter';
 
 describe('counter', () => {
   describe('reducer', () => {
@@ -7,11 +9,11 @@ describe('counter', () => {
     });
 
     it('should increment the count', () => {
-      expect(reducer(undefined, { type: 'counter/INCREMENT' })).toEqual({ count: 1 });
+      expect(reducer(undefined, { type: constants.INCREMENT_COUNTER })).toEqual({ count: 1 });
     });
 
     it('should decrement the count', () => {
-      expect(reducer(undefined, { type: 'counter/DECREMENT' })).toEqual({ count: -1 });
+      expect(reducer(undefined, { type: constants.DECREMENT_COUNTER })).toEqual({ count: -1 });
     });
 
     xit('should increment the counter', () => {
@@ -19,11 +21,11 @@ describe('counter', () => {
   });
   describe('actions', () => {
     it('creates INCREMENT', () => {
-      expect(incrementCounter()).toEqual({ type: 'counter/INCREMENT' });
+      expect(incrementCounter()).toEqual({ type: constants.INCREMENT_COUNTER });
     });
 
     it('creates DECREMENT', () => {
-      expect(decrementCounter()).toEqual({ type: 'counter/DECREMENT' });
+      expect(decrementCounter()).toEqual({ type: constants.DECREMENT_COUNTER });
     });
   });
 });

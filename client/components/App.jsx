@@ -9,7 +9,7 @@ import {
 
 import NavBar from './NavBar';
 
-import { incrementCounter } from '../store/modules/counter';
+import { incrementCounter } from '../store/actions/counter';
 
 export const App = ({ count, buttonCallback }) => (
   <div>
