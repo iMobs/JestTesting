@@ -10,7 +10,7 @@
     "build": "webpack -p",
     "dev": "webpack -dw",
     "start": "node server/index.js",
-    "test": "jest --coverage",
+    "test": "jest",
     "test:coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls",
     "lint": "eslint --ext .js --ext .jsx ."
   },
