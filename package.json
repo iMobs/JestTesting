@@ -4,7 +4,7 @@
   "description": "An example full stack JS app using Jest for testing",
   "main": "server/index.js",
   "repository": "git@github.com:iMobs/JestTesting.git",
-  "author": "Ian Mobley <imobley@mobsworkshop.com>",
+  "author": "Ian Mobley <ianmobley@gmail.com>",
   "license": "MIT",
   "scripts": {
     "build": "webpack -p",
