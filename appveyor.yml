@@ -12,6 +12,6 @@ build: off
 test_script:
   - node --version
   - yarn --version
-  - yarn run lint
+  - yarn lint
   - yarn test
 version: "{build}"
